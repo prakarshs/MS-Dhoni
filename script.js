@@ -16,7 +16,7 @@ gsap.to("#nav-content", {
         scroller: "body",
         start: "top -10%",
         end: "top -15%",
-        scrub: 2
+        scrub: 1.5
     }
 })
 gsap.to("#logo #logo-img", {
@@ -28,6 +28,17 @@ gsap.to("#logo #logo-img", {
         scroller: "body",
         start: "top -10%",
         end: "top -15%",
-        scrub: 2.5
+        scrub: 1.5
+    }
+})
+
+gsap.to("#main", {
+    backgroundColor: "#16161d",
+    scrollTrigger: {
+        trigger: "#main",
+        scroller: "body",
+        start: "top -20%",
+        end: "top -70%",
+        scrub: 2
     }
 })

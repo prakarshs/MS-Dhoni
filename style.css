@@ -67,6 +67,16 @@ p {
     text-transform: uppercase;
 }
 
+#nav-txt a {
+    text-decoration: none;
+    color: inherit; 
+}
+#nav-txt a:active {
+    
+    color: #F0501E; 
+}
+
+
 #nav-txt {
     text-align: center;
     flex-grow: 1;
@@ -84,7 +94,7 @@ p {
     background-color: rgba(0,0,0,0.60);
 
 }
-#page1{
+#home{
     width: 100%;
     height: 100vh;
     flex-direction: column;
@@ -93,12 +103,12 @@ p {
     justify-content: center;
     align-items: center;
 }
-#page2{
+#career{
     width: 100%;
     height: 100vh;
     /* position: relative; */
 }
-#page1 p{
+#home p{
     margin-top: 10px;
     width: 50%;
     font-weight: 100;
@@ -106,11 +116,11 @@ p {
     line-height: 25px;
     text-align: center;
 }
-#page1 h1{
+#home h1{
     font-size: 150px;
     z-index: 10;
 }
-#page1 h1::before{
+#home h1::before{
     content: "MAHENDRA SINGH DHONI";
     color: black;
     position: absolute;
@@ -119,6 +129,72 @@ p {
     z-index: -1;
     
 }
-#page1 h3{
+#home h3{
     font-size: 70px;
 }
+#trophies{
+    width: 100%;
+    height:100vh;
+}
+#history{
+    width: 100%;
+    height:100vh;
+}
+
+#brands{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#brands-txt{
+    width: 50% ;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#brands-txt p{
+    font-size:30px;
+}
+
+.scroller-content img{
+    width : 220px;
+    height : 140px;
+    border-radius: 10%;
+    display: inline-block;
+    
+}
+
+.scroller-content{
+    display: inline-block;
+    animation-name: brandScroller;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+}
+#brands-scroller{
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}
+
+#brands-scroller::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+@keyframes brandScroller {
+
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+
