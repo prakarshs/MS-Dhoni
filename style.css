@@ -179,12 +179,17 @@ p {
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
+    z-index: 100;
     
+}
+.scroller-content img:hover{
+    border: 3px solid #F0501E;
 }
 
 #brands-scroller::-webkit-scrollbar{
     visibility: hidden;
 }
+
 
 @keyframes brandScroller {
 
