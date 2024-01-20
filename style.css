@@ -190,6 +190,15 @@ p {
     visibility: hidden;
 }
 
+body::-webkit-scrollbar{
+    display: block;
+    width: 5px;
+    background-color: #F0501E;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: aliceblue;
+    border-radius: 50px;
+}
 
 @keyframes brandScroller {
 
